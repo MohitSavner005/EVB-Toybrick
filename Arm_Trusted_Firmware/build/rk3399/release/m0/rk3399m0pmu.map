@@ -1,0 +1,120 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .data          0x0000000000000000        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .bss           0x0000000000000000        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .comment       0x0000000000000000       0x5a /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .text          0x0000000000000000        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+ .data          0x0000000000000000        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+ .bss           0x0000000000000000        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+ .comment       0x0000000000000000       0x5a /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.m0_bin         0x0000000000000000      0x240
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000       0xc0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+                0x0000000000000000                g_pfnVectors
+                0x0000000000000001                ASSERT ((. == 0xc0), ISR vector has the wrong size.)
+                0x0000000000000001                ASSERT ((. == 0xc0), M0 params should go right behind ISR table.)
+                0x00000000000000e8                . = (. + 0x28)
+ *fill*         0x00000000000000c0       0x28 
+ *(.text*)
+ .text.m0_main  0x00000000000000e8       0x48 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+                0x00000000000000e8                m0_main
+ .text.default_handler
+                0x0000000000000130        0x4 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+                0x0000000000000130                systick_handler
+                0x0000000000000130                svc_handler
+                0x0000000000000130                pend_sv_handler
+                0x0000000000000130                nmi_handler
+                0x0000000000000130                hardware_fault_handler
+ .text.default_reset_handler
+                0x0000000000000134        0x8 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+                0x0000000000000134                reset_handler
+ *(.rodata*)
+ *(.data*)
+ *(.bss*)
+                0x0000000000000140                . = ALIGN (0x8)
+ *fill*         0x000000000000013c        0x4 
+ *(.co_stack*)
+ .co_stack      0x0000000000000140      0x100 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+                0x0000000000000140                pstack
+
+.glue_7         0x0000000000000240        0x0
+ .glue_7        0x0000000000000240        0x0 linker stubs
+
+.glue_7t        0x0000000000000240        0x0
+ .glue_7t       0x0000000000000240        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000000240        0x0
+ .vfp11_veneer  0x0000000000000240        0x0 linker stubs
+
+.v4_bx          0x0000000000000240        0x0
+ .v4_bx         0x0000000000000240        0x0 linker stubs
+
+.iplt           0x0000000000000240        0x0
+ .iplt          0x0000000000000240        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+
+.igot.plt       0x0000000000000240        0x0
+ .igot.plt      0x0000000000000240        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+
+.rel.dyn        0x0000000000000240        0x0
+ .rel.iplt      0x0000000000000240        0x0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+
+/DISCARD/
+ *(.comment)
+ *(.note*)
+LOAD /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+LOAD /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+OUTPUT(/home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/rk3399m0pmu.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x2c
+ .ARM.attributes
+                0x0000000000000000       0x2c /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .ARM.attributes
+                0x000000000000002c       0x2c /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+
+.debug_info     0x0000000000000000      0x1cb
+ .debug_info    0x0000000000000000      0x104 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .debug_info    0x0000000000000104       0xc7 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+
+.debug_abbrev   0x0000000000000000      0x11f
+ .debug_abbrev  0x0000000000000000       0x74 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .debug_abbrev  0x0000000000000074       0xab /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+
+.debug_loc      0x0000000000000000       0xad
+ .debug_loc     0x0000000000000000       0xad /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+
+.debug_aranges  0x0000000000000000       0x48
+ .debug_aranges
+                0x0000000000000000       0x20 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .debug_aranges
+                0x0000000000000020       0x28 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+
+.debug_ranges   0x0000000000000000       0xb8
+ .debug_ranges  0x0000000000000000       0xa0 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .debug_ranges  0x00000000000000a0       0x18 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+
+.debug_line     0x0000000000000000      0x143
+ .debug_line    0x0000000000000000       0xcf /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .debug_line    0x00000000000000cf       0x74 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+
+.debug_str      0x0000000000000000      0x18a
+ .debug_str     0x0000000000000000      0x130 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+                                        0x13d (size before relaxing)
+ .debug_str     0x0000000000000130       0x5a /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o
+                                        0x17c (size before relaxing)
+
+.debug_frame    0x0000000000000000       0x58
+ .debug_frame   0x0000000000000000       0x20 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/suspend.o
+ .debug_frame   0x0000000000000020       0x38 /home/mohit/ws/arm-trusted-firmware/build/rk3399/release/m0/startup.o

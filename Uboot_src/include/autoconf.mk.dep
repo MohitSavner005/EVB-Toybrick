@@ -1,0 +1,152 @@
+include/config/auto.conf: include/common.h include/linux/kconfig.h \
+ include/generated/autoconf.h include/config.h include/config_uncmd_spl.h \
+ include/configs/evb_rk3399.h include/configs/rk3399_common.h \
+ include/configs/rockchip-common.h include/linux/sizes.h \
+ include/linux/const.h include/config_distro_bootcmd.h \
+ include/environment/distro/sf.h arch/arm/include/asm/config.h \
+ include/linux/kconfig.h include/config_fallbacks.h include/errno.h \
+ include/linux/errno.h include/time.h include/linux/typecheck.h \
+ include/linux/types.h include/linux/posix_types.h include/linux/stddef.h \
+ arch/arm/include/asm/posix_types.h arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stdbool.h \
+ include/linux/printk.h include/log.h include/stdio.h \
+ /usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stdarg.h \
+ include/linux/compiler.h include/linux/compiler_types.h \
+ include/linux/compiler_attributes.h include/linux/compiler-gcc.h \
+ include/linker_lists.h include/dm/uclass-id.h include/linux/bitops.h \
+ include/asm-generic/bitsperlong.h include/linux/kernel.h \
+ arch/arm/include/asm/bitops.h include/asm-generic/bitops/__ffs.h \
+ include/asm-generic/bitops/__fls.h include/asm-generic/bitops/fls.h \
+ include/asm-generic/bitops/fls64.h \
+ arch/arm/include/asm/proc-armv/system.h include/linux/list.h \
+ include/linux/poison.h include/linux/string.h \
+ arch/arm/include/asm/string.h include/linux/linux_string.h \
+ arch/arm/include/asm/u-boot.h include/asm-generic/u-boot.h \
+ arch/arm/include/asm/u-boot-arm.h include/display_options.h \
+ include/vsprintf.h include/env_internal.h include/compiler.h \
+ /usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stddef.h \
+ arch/arm/include/asm/byteorder.h include/linux/byteorder/little_endian.h \
+ include/linux/byteorder/swab.h include/linux/byteorder/generic.h
+
+include/linux/kconfig.h:
+
+include/generated/autoconf.h:
+
+include/config.h:
+
+include/config_uncmd_spl.h:
+
+include/configs/evb_rk3399.h:
+
+include/configs/rk3399_common.h:
+
+include/configs/rockchip-common.h:
+
+include/linux/sizes.h:
+
+include/linux/const.h:
+
+include/config_distro_bootcmd.h:
+
+include/environment/distro/sf.h:
+
+arch/arm/include/asm/config.h:
+
+include/linux/kconfig.h:
+
+include/config_fallbacks.h:
+
+include/errno.h:
+
+include/linux/errno.h:
+
+include/time.h:
+
+include/linux/typecheck.h:
+
+include/linux/types.h:
+
+include/linux/posix_types.h:
+
+include/linux/stddef.h:
+
+arch/arm/include/asm/posix_types.h:
+
+arch/arm/include/asm/types.h:
+
+include/asm-generic/int-ll64.h:
+
+/usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stdbool.h:
+
+include/linux/printk.h:
+
+include/log.h:
+
+include/stdio.h:
+
+/usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stdarg.h:
+
+include/linux/compiler.h:
+
+include/linux/compiler_types.h:
+
+include/linux/compiler_attributes.h:
+
+include/linux/compiler-gcc.h:
+
+include/linker_lists.h:
+
+include/dm/uclass-id.h:
+
+include/linux/bitops.h:
+
+include/asm-generic/bitsperlong.h:
+
+include/linux/kernel.h:
+
+arch/arm/include/asm/bitops.h:
+
+include/asm-generic/bitops/__ffs.h:
+
+include/asm-generic/bitops/__fls.h:
+
+include/asm-generic/bitops/fls.h:
+
+include/asm-generic/bitops/fls64.h:
+
+arch/arm/include/asm/proc-armv/system.h:
+
+include/linux/list.h:
+
+include/linux/poison.h:
+
+include/linux/string.h:
+
+arch/arm/include/asm/string.h:
+
+include/linux/linux_string.h:
+
+arch/arm/include/asm/u-boot.h:
+
+include/asm-generic/u-boot.h:
+
+arch/arm/include/asm/u-boot-arm.h:
+
+include/display_options.h:
+
+include/vsprintf.h:
+
+include/env_internal.h:
+
+include/compiler.h:
+
+/usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stddef.h:
+
+arch/arm/include/asm/byteorder.h:
+
+include/linux/byteorder/little_endian.h:
+
+include/linux/byteorder/swab.h:
+
+include/linux/byteorder/generic.h:
